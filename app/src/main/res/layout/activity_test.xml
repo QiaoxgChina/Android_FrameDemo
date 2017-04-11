@@ -8,8 +8,6 @@
     android:orientation="vertical"
     tools:context="com.qiaoxg.lucky.ui.activity.TestActivity">
 
-    <include layout="@layout/view_title_bar"/>
-
     <Button
         android:id="@+id/test_btn_http"
         android:layout_width="match_parent"

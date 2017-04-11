@@ -1,2 +1,9 @@
 # AndroidDemo-GreenDao
-GreenDao数据库框架Demo
+
+v1.0
+
+	1、基本框架
+	2、okhttp框架
+	
+
+
