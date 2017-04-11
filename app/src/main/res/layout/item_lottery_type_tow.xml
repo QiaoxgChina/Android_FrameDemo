@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/lottery_rl_parentView"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/selector_item_bg">
+
+    <ImageView
+        android:id="@+id/lottery_iv_header"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/daletou"/>
+
+    <TextView
+        android:id="@+id/lottery_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lottery_iv_header"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="大乐透"
+        android:textColor="#000"
+        android:layout_marginBottom="10dp"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_D3D3D3"/>
+
+    <TextView
+        android:layout_width="0.3dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:background="@color/color_D3D3D3"/>
+
+</RelativeLayout>

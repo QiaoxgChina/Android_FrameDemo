@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qiaoxg.lucky.ui.activity.DoubleColorActivity">
+
+    <include
+        android:id="@+id/doubleColor_titleBar"
+        layout="@layout/view_title_bar"/>
+
+    <TextView
+        android:id="@+id/doubleColor_rl_hidenLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doubleColor_titleBar"
+        android:text="我是隐藏的布局是大法官按施工师傅吧送人头是大法官八十八手续费VB身体任何风格不是上天"/>
+
+    <RelativeLayout
+        android:id="@+id/doubleColor_rl_activeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/doubleColor_titleBar"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/active_tv_tip"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="至少选择6个红球1个篮球"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/active_rv_redBall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/active_tv_tip"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:background="@android:color/transparent"/>
+
+        <View
+            android:id="@+id/active_v_diliver"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@+id/active_rv_redBall"
+            android:layout_marginTop="14dp"
+            android:background="@color/color_D3D3D3"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/active_rv_blueBall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/active_v_diliver"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="14dp"
+            android:background="@android:color/transparent"/>
+
+        <View
+            android:id="@+id/emptyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#99000000"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/doubleColor_ib_delete"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/btn_delete64"/>
+
+        <View
+            android:id="@+id/view_label"
+            android:layout_width="0.5dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/doubleColor_ib_delete"
+            android:background="@color/color_D3D3D3"/>
+
+        <TextView
+            android:id="@+id/doubleColor_tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/view_label"
+            android:gravity="center_vertical"
+            android:text="0注"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/doubleColor_tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/doubleColor_tv_num"
+            android:gravity="center_vertical"
+            android:text="0元"
+            android:textColor="@color/color_FDFC90"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/doubleColor_tv_ok"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/color_app_main"
+            android:gravity="center"
+            android:text="确定"
+            android:layout_marginRight="14dp"
+            android:textColor="@color/color_FFFFFF"/>
+
+    </RelativeLayout>
+</RelativeLayout>

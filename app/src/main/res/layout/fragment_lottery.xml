@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/view_title_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/parent_ll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/fragment_cycle_viewpager_content"
+                android:name="com.qiaoxg.lucky.ui.common.adcycleviewpager.CycleViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="150dip"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="恭喜：用户 我会中大奖   双色球中奖 250万"
+                android:textColor="@color/color_red_ball"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_app_bg"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/lottery_rv_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

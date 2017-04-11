@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_app_bg"
+    tools:context="com.qiaoxg.lucky.ui.activity.RegisterStepOneActivity">
+
+    <include layout="@layout/view_title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_btn_round"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color_FFFFFF"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/login_et_phoneNum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/mine_input_username"
+                android:layout_marginLeft="14dp"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textColorHint="@color/color_9D9D9D"
+                android:textSize="14dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_9D9D9D"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color_FFFFFF"
+            android:gravity="center_vertical"
+            android:weightSum="7"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/login_et_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:layout_weight="5"
+                android:layout_marginLeft="14dp"
+                android:hint="@string/mine_input_verify_code"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:textColorHint="@color/color_9D9D9D"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_btn_round"
+                android:text="@string/mine_get_verify_code"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/register_tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_btn_round"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/mine_next_step"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

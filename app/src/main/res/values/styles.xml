@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- -->
+    <style name="MyAppFullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- 主界面底部BUtton的样式 -->
+    <style name="MainActivity_tabarButton">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/color_9D9D9D</item>
+        <item name="android:onClick">onTabSelect</item>
+        <item name="android:paddingBottom">2dip</item>
+        <item name="android:paddingTop">7dip</item>
+        <item name="android:scaleType">matrix</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dip</item>
+    </style>
+
+    <!-- mineFragment item style -->
+    <style name="MineFragment_item_textView">
+        <item name="android:background">@drawable/selector_item_bg</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_height">@dimen/setting_item_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">@dimen/common_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/common_horizontal_margin</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawableRight">@drawable/btn_right</item>
+    </style>
+
+</resources>

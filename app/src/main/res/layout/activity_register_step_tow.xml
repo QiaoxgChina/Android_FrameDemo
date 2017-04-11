@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qiaoxg.lucky.ui.activity.RegisterStepTowActivity">
+
+    <include layout="@layout/view_title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_btn_round"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/color_FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/login_et_phoneNum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:background="@null"
+                android:hint="@string/mine_input_password"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:textColorHint="@color/color_9D9D9D"
+                android:textSize="14dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_9D9D9D"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/color_FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="7">
+
+            <EditText
+                android:id="@+id/login_et_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:layout_weight="5"
+                android:background="@null"
+                android:hint="@string/mine_input_password_again"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:textColorHint="@color/color_9D9D9D"
+                android:textSize="14dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/register_tv_done"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_btn_round"
+        android:gravity="center"
+        android:text="@string/mine_register_done"
+        android:textAllCaps="false"/>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Lucky</string>
+
+    <!-- main tabs -->
+    <string name="mine">我的</string>
+    <string name="lottery">购彩</string>
+    <string name="discovery">发现</string>
+    <string name="result">开奖</string>
+
+    <!-- app tips 所有提示性的文字 -->
+    <string name="tips_third_platform_login">使用第三方账号登录</string>
+
+    <!-- mine strings -->
+    <string name="mine_register">用户注册</string>
+    <string name="mine_find_psw">找回密码</string>
+    <string name="mine_input_username">请输入手机号</string>
+    <string name="mine_input_password">请输入密码</string>
+    <string name="mine_input_password_again">请再次密码</string>
+    <string name="mine_input_verify_code">请输入验证码</string>
+    <string name="mine_login">登录</string>
+    <string name="mine_weixin_login">微信登录</string>
+    <string name="mine_qq_login">QQ登录</string>
+    <string name="mine_forget_password">忘记密码?</string>
+    <string name="mine_get_verify_code">获取验证码</string>
+    <string name="mine_next_step">下一步</string>
+    <string name="mine_register_done">完成注册</string>
+</resources>

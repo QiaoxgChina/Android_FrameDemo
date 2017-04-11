@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/mine_rl_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="@drawable/selector_item_bg"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/common_horizontal_margin"
+                    android:paddingRight="@dimen/common_horizontal_margin">
+
+                    <ImageView
+                        android:id="@+id/mine_iv_header"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/pic_default_avatar_"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toLeftOf="@+id/label"
+                        android:layout_toRightOf="@+id/mine_iv_header"
+                        android:drawableRight="@drawable/btn_right"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            android:id="@+id/mine_tv_nickName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="用户名："/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="账户余额："/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/label"
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/btn_right"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@color/color_app_bg"/>
+
+                <TextView
+                    style="@style/MineFragment_item_textView"
+                    android:text="我的账户"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_app_bg"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    style="@style/MineFragment_item_textView"
+                    android:text="我要充值"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_app_bg"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    style="@style/MineFragment_item_textView"
+                    android:text="投注记录"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@color/color_app_bg"/>
+
+                <TextView
+                    android:id="@+id/profile_notifysetting_view"
+                    style="@style/MineFragment_item_textView"
+                    android:text="设置"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_app_bg"/>
+
+                <TextView
+                    android:id="@+id/profile_checkupdate_view"
+                    style="@style/MineFragment_item_textView"
+                    android:text="检查更新"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_app_bg"/>
+
+                <TextView
+                    android:id="@+id/profile_redpacket_view"
+                    style="@style/MineFragment_item_textView"
+                    android:text="关于我们"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/mine_logout_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/common_horizontal_margin"
+                android:layout_marginRight="@dimen/common_horizontal_margin"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="70dp"
+                android:background="@drawable/bg_btn_round"
+                android:gravity="center"
+                android:text="注销"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

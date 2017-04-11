@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- app 的主色调-->
+    <color name="color_app_main">#2C97E8</color>
+
+    <color name="color_app_bg">#F5F5F5</color>
+
+    <color name="color_9D9D9D">#9D9D9D</color>
+
+    <color name="color_D3D3D3">#D3D3D3</color>
+
+    <color name="color_DCDCDC">#DCDCDC</color>
+
+    <color name="color_FFFFFF">#FFFFFF</color>
+
+    <color name="color_red_ball">#DC143C</color>
+
+    <color name="color_blue_ball">#2C97E8</color>
+
+    <color name="color_FDFC90">#FDFC90</color>
+</resources>
